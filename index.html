@@ -1,4 +1,75 @@
 <!doctype html>
+<!-- Paste this block right after <body> (or inside your top wrapper), above your existing hero. -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,500;6..72,600&family=Public+Sans:wght@400;500;600&display=swap">
+<style>
+.gp-intro{--ink:#14213d;--muted:#46546b;--paper:#f6f9fb;--line:#d3dde6;--accent:#1c6f66;--accent-d:#14524b;
+  background:var(--paper);color:var(--ink);font-family:"Public Sans",system-ui,-apple-system,"Segoe UI",Arial,sans-serif;
+  padding:clamp(32px,6vw,72px) clamp(18px,5vw,64px);line-height:1.55;box-sizing:border-box}
+.gp-intro *{box-sizing:border-box}
+.gp-wrap{max-width:1080px;margin:0 auto;display:grid;grid-template-columns:1.25fr 1fr;gap:clamp(24px,5vw,64px);align-items:start}
+.gp-intro h1{font-family:Newsreader,Georgia,"Times New Roman",serif;font-weight:600;font-size:clamp(2rem,5vw,3.4rem);line-height:1.08;margin:0 0 16px;letter-spacing:-.01em}
+.gp-name{font-weight:600;color:var(--accent-d);margin:0 0 10px;font-size:1.02rem}
+.gp-lead{font-size:1.08rem;color:var(--muted);max-width:56ch;margin:0 0 24px}
+.gp-cta{display:flex;flex-wrap:wrap;gap:12px}
+.gp-btn{display:inline-block;padding:13px 22px;border-radius:6px;font-weight:600;text-decoration:none;font-size:1rem;border:2px solid var(--accent)}
+.gp-btn.primary{background:var(--accent);color:#fff}
+.gp-btn.primary:hover{background:var(--accent-d);border-color:var(--accent-d)}
+.gp-btn.ghost{color:var(--accent-d);background:transparent}
+.gp-btn.ghost:hover{background:#e3f0ee}
+.gp-btn:focus-visible{outline:3px solid var(--ink);outline-offset:3px}
+.gp-card{background:#fff;border:1px solid var(--line);border-left:5px solid var(--accent);border-radius:4px;padding:22px 24px}
+.gp-card h2{font-family:Newsreader,Georgia,serif;font-size:1.25rem;margin:0 0 12px}
+.gp-card dl{margin:0}
+.gp-card dt{font-weight:600;margin-top:12px}
+.gp-card dt:first-child{margin-top:0}
+.gp-card dd{margin:2px 0 0;color:var(--muted);font-size:.96rem}
+.gp-skills{max-width:1080px;margin:clamp(28px,5vw,52px) auto 0;border-top:1px solid var(--line);padding-top:28px}
+.gp-skills h2{font-family:Newsreader,Georgia,serif;font-size:1.5rem;margin:0 0 18px}
+.gp-skills ul{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:22px 32px}
+.gp-skills h3{font-size:1.02rem;margin:0 0 4px}
+.gp-skills p{margin:0;color:var(--muted);font-size:.95rem}
+.gp-lang{max-width:1080px;margin:26px auto 0;color:var(--muted);font-size:.95rem}
+@media (max-width:760px){.gp-wrap{grid-template-columns:1fr}}
+</style>
+
+<section class="gp-intro" aria-labelledby="gp-title">
+  <div class="gp-wrap">
+    <div>
+      <p class="gp-name">Dr. Jaideep Salil Ghoshal, MBBS</p>
+      <h1 id="gp-title">Thirty-two years as a family doctor, now available online.</h1>
+      <p class="gp-lead">I have treated families in Nashik since 1992, and I have also worked as a company medical officer and a hospital administrator. You get a physician who has seen your kind of problem many times, and who explains it plainly.</p>
+      <div class="gp-cta">
+        <a class="gp-btn primary" href="https://wa.me/91XXXXXXXXXX?text=Hello%20Dr.%20Ghoshal%2C%20I%20would%20like%20to%20book%20a%20consultation.">Book on WhatsApp</a>
+        <a class="gp-btn ghost" href="#gp-skills">See my experience</a>
+      </div>
+    </div>
+    <aside class="gp-card" aria-label="Credentials at a glance">
+      <h2>At a glance</h2>
+      <dl>
+        <dt>Private family practice, Nashik</dt>
+        <dd>Continuous practice since 1992</dd>
+        <dt>Chief Medical Officer, MICO-BOSCH</dt>
+        <dd>1998 to 2008</dd>
+        <dt>Medical Officer (locum), Indian Oil</dt>
+        <dd>2011 to 2017</dd>
+        <dt>PGDHM, IIHMR Jaipur</dt>
+        <dd>First rank and gold medal</dd>
+      </dl>
+    </aside>
+  </div>
+
+  <div class="gp-skills" id="gp-skills">
+    <h2>What I can help you with</h2>
+    <ul>
+      <li><h3>Family medicine</h3><p>Everyday illness, long-term care and health advice for every age in the household.</p></li>
+      <li><h3>Occupational health</h3><p>Workplace health and fitness, drawn from ten years as chief medical officer at a major manufacturing company.</p></li>
+      <li><h3>Hospital and clinic management</h3><p>Experience across Jaslok, Wockhardt Kolkata, Rajebahadur, Jairam and Hinduja lab medicine.</p></li>
+      <li><h3>Aesthetic medicine</h3><p>Trained through ILAMED, alongside a long clinical background.</p></li>
+    </ul>
+  </div>
+  <p class="gp-lang">Consultations in English, Hindi, Bengali and Marathi.</p>
+</section>
+
 <html lang="en" class="dark">
   <head>
     <meta charset="UTF-8" />
